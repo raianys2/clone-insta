@@ -1,23 +1,25 @@
-import ItemMenuLateralEsquerda from "./ItemMenuLateralEsquerda"
-import {BiHomeHeart} from 'react-icons/bi'
-import {BsSearchHeart} from 'react-icons/bs'
+import ItemMenu from "./ItemMenu";
+import LogoInsta from "../assets/LogoInsta.png";
 
-export default function ConteudoEsquerdo() {
-
-    return (
+export default function ConteudoEsquerdo () {
+    return(
         <div className="ConteudoEsquerdo">
-            <div className="logo"></div>
-            <div>
-                <div className="menu">
-                    <ul>
-                        <ItemMenuLateralEsquerda icone={<BiHomeHeart/>} texto="Home" />
-                        <ItemMenuLateralEsquerda icone={<BsSearchHeart/>} texto="Buscar"/>
-                        <ItemMenuLateralEsquerda icone="Caixa" texto="Explorar" />
-                        <ItemMenuLateralEsquerda icone="Interoog" texto="Exemplo" />
-                        <li>Menu</li>
-                    </ul>
-                </div>
+            <div className="WrapLogo">
+                <img className="LogoInsta" src={LogoInsta} alt="Logo Instagram"/>
             </div>
+            <div className='wrapMenu'>
+                <ul>
+                   <ItemMenu icone="Casa" texto="Home" />
+                   <ItemMenu icone="Lupa" texto="Buscar" />
+                   <ItemMenu icone="Compass" texto="Explorar" />
+        
+                </ul>
+            </div>
+            {/* Exemplo de conteúdo à esquerda */}
         </div>
     )
+}
+
+function x (nome, cidade) {
+    alert("Olá " + nome)
 }

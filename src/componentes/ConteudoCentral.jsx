@@ -1,8 +1,8 @@
-export default function ConteudoCentral() {
+export default function ConteudoCentral () {
+    return(
+        <div className="ConteudoCentral">
+Exemplo de conteudo Principal
+        </div>
 
-  return (
-    <div className="ConteudoCentral">
-      <p>Conteudo</p>
-    </div>
-  )
+    )
 }
